@@ -23,7 +23,7 @@ function addTaskToProject(projects, projectId, task) {
   if (project) {
       project.tasks.push(task);
   } else {
-      console.error("Project not found!");
+      throw new Error("Project not found!");
   }
 }
 
@@ -35,10 +35,10 @@ function removeTaskFromProject(projects, projectId, taskId) {
       if (taskIndex !== -1) {
           project.tasks.splice(taskIndex, 1);
       } else {
-          console.error("Task not found!");
+          throw new Error("Task not found!");
       }
   } else {
-      console.error("Project not found!");
+      throw new Error("Project not found!");
   }
 }
 
@@ -48,7 +48,7 @@ function updateProjectStatus(projects, projectId, status) {
   if (project) {
       project.status = status;
   } else {
-      console.error("Project not found!");
+      throw new Error("Project not found!");
   }
 }
 
