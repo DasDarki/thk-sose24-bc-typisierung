@@ -13,4 +13,15 @@ Im JS-Code befindet sich eine Funktion "processEntries", welche als Parameter ei
 
 ## Aufgabe 2 - Polymorphie in TypeScript:
 Für diese Aufgabe könnt ihr entweder euren Code aus Aufgabe 1 verwenden oder ihr fragt uns nach der Musterlösung. Um die Konzepte der Polymorphie nicht zu vernachlässigen, setzt sich die nun folgende Aufgabe mit Polymorphie in TypeScript auseinander. 
-Implementiert dazu ein neues Interface "Nameable". Überlegt euch, welches Attribut, das Interface umfassen sollte. Dieses soll nun "Project" und "Task" erweitern, indem die beiden davon erben. Anschließend soll die Funktion "processEntries" - sofern ihr die Optionale Zusatzaufgabe nicht erledigt habt, solltet ihr diese nun erledigen oder euch an der Musterlösung bedienen - als Parameter ein Array von Nameables übergeben bekommen. Implementiert nun eine Funktion "printNameableAttr", welche die Attribute des Nameable-Interfaces ausgibt. Zum Schluss solltet ihr die Implementation testen, überlegt euch, wie ihr das neue Interface und die neue Funktion am besten testen könnt. 
+Implementiert dazu ein neues Interface "Nameable". Überlegt euch, welches Attribut, das Interface umfassen sollte. 
+Dieses soll nun "Project" und "Task" erweitern, indem die beiden davon erben. 
+Anschließend soll die Funktion "processEntries" - sofern ihr die Optionale Zusatzaufgabe nicht erledigt habt, solltet ihr diese nun erledigen oder euch an der Musterlösung bedienen - als Parameter ein Array von Nameables übergeben bekommen. 
+Implementiert nun eine Funktion "printNameableAttr", welche die Attribute des Nameable-Interfaces ausgibt. 
+Zum Schluss solltet ihr die Implementation testen, überlegt euch, wie ihr das neue Interface und die neue Funktion am besten testen könnt. 
+
+## Aufgabe 3 - Polymorphie anhand von Methoden in TypeScript:
+Wie bereits die beiden Aufgaben zuvor, basiert diese Aufgabe auf der Lösung der vorherigen Aufgaben. Ihr solltet daher eine Lösung aus Aufgabe 2 vorliegen haben. In dieser Aufgabe geht es darum zu verstehen, wie unterschiedliche Klassen dasselbe Interface implementieren und dennoch eigene spezifsche Implementierungen für Funktionen bereitstellen können. 
+Beginnt damit ein Interface "Definition" zu implementieren, welches mit einer Funktion "define" ausgestattet ist, die einen String zurückgibt.
+Wie bereits zuvor sollen nun "Project" und "Task" auch dieses Interface beerben und damit die "define"-Methode implementieren. 
+Erstellt nun eine Funktion "printDefinitions" welches ein Array von Definitions akzeptiert und deren Beschreibungen ausgibt.
+Fügt anschließend Testfälle hinzu, die die Implementierungen testen.
